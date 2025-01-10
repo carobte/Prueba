@@ -1,3 +1,68 @@
+# Personal Expense Tracking Application
+
+This is a web application developed with **Laravel** that allows users to record, manage, and view their personal expenses in a simple and efficient manner. The main goal of this application is to facilitate daily expense management by providing an easy-to-use interface to track personal finances in detail.
+
+## Features
+
+- **Expense Recording**: Users can record each expense with the following information:
+  - **Description**: A brief description of the expense.
+  - **Price**: The amount spent.
+  - **Category**: The category the expense belongs to.
+  - **Date**: The date the expense was made.
+  
+- **Expense Viewing**: The recorded expenses are displayed in a list sorted by date. Users can filter the expenses by category or date range.
+
+- **Automatic Total Calculation**: The application shows the total accumulated expenses. It also displays category-wise totals, helping the user understand where they are spending the most.
+
+- **Editing and Deleting Records**: Users can edit an existing expense. They also have the option to delete an expense, with a confirmation prompt to avoid accidental errors.
+
+- **Validations**:
+  - The price (amount) must be a positive number.
+  - The description and category fields are mandatory.
+  - The entered date must be valid.
+
+## Project Requirements
+
+- **PHP** 8.0 or higher.
+- **Laravel** 9.x or higher.
+
+## Installation
+
+### 1. Clone the repository
+
+- <code> git clone https://github.com/carobte/Prueba<br></code>
+- <code> cd Prueba </code>
+
+### 2. Install dependencies
+
+- <code> npm install </code>
+
+### 3. Compile assets
+
+To compile CSS and JavaScript files, run:
+
+- <code>npm run dev</code>
+
+### 4. Configure the sqlite database
+In the root directory:
+
+- <code> touch database/database.sqlite </code>
+
+Note: If you want to use other SQL databases, make sure to create and update your .env file and variables.
+
+### 5. Run the migrations and seeders
+
+- <code>php artisan migrate</code><br>
+- <code>php artisan db:seed</code><br>
+
+### 6. Start the development server
+
+Run the following command to start the local server:
+
+<code> composer run dev </code>
+
+## Default README for Laravel projects
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
