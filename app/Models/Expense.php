@@ -16,6 +16,12 @@ class Expense extends Model
         'category_id',
     ];
 
+    // Cast dates for Laravel formats
+
+    protected $casts = [
+        'date' => 'date'
+    ];
+
     // Category relation
     public function category()
     {
