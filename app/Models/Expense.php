@@ -25,7 +25,7 @@ class Expense extends Model
     // Validaciones
     public static $rules = [
         'description' => 'required|max:255',
-        'amount' => 'required|integer|min:1',
+        'amount' => 'required|numeric|min:0.01',
         'date' => 'required|date',
         'category_id' => 'required|exists:categories,id',
     ];
