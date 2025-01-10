@@ -23,8 +23,10 @@ This is a web application developed with **Laravel** that allows users to record
 
 ## Project Requirements
 
-- **PHP** 8.0 or higher.
-- **Laravel** 9.x or higher.
+- [PHP](https://www.php.net/downloads.php) >= 8.0
+- [Composer](https://getcomposer.org/)
+- [Node.js](https://nodejs.org/)
+- [Git](https://git-scm.com/)
 
 ## Installation
 
