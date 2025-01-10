@@ -45,19 +45,23 @@ To compile CSS and JavaScript files, run:
 
 - <code>npm run dev</code>
 
-### 4. Configure the sqlite database
+### 4. Install PHP dependencies
+
+- <code> composer install </code>
+
+### 5. Configure the sqlite database
 In the root directory:
 
 - <code> touch database/database.sqlite </code>
 
 Note: If you want to use other SQL databases, make sure to create and update your .env file and variables.
 
-### 5. Run the migrations and seeders
+### 6. Run the migrations and seeders
 
 - <code>php artisan migrate</code><br>
 - <code>php artisan db:seed</code><br>
 
-### 6. Start the development server
+### 7. Start the development server
 
 Run the following command to start the local server:
 
