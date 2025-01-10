@@ -1,10 +1,13 @@
 @extends('layouts.app')
 @section('content')
     <div class="min-h-screen bg-gray-50 p-6">
-        <div class="max-w-7xl mx-auto flex flex-col gap-6">
+        <div class="max-w-7xl mx-auto flex flex-col gap-6 mt-10">
             <!-- Encabezado -->
             <div class="flex justify-between items-center">
                 <h1 class="text-3xl font-bold text-gray-800">Gastos</h1>
+                <a href="{{ route('expenses.create') }}" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                    Crear Gasto
+                </a>
             </div>
 
             <!-- Filtros -->
@@ -71,7 +74,7 @@
                         <tbody class="divide-y divide-gray-200">
                             @foreach ($expenses as $expense)
                                 <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 text-sm text-gray-800">{{ $expense->description }}</td>
+                                    <td class="px-6 py-4 text-sm text-gray-800">{{ ucfirst($expense->description) }}</td>
                                     <td class="px-6 py-4 text-sm text-emerald-600 font-medium">
                                         ${{ number_format($expense->amount, 2) }}</td>
                                     <td class="px-6 py-4 text-sm text-gray-800">{{ ucfirst($expense->category->name) }}</td>
@@ -87,7 +90,7 @@
                                                 @method('DELETE')
                                                 <button type="submit"
                                                     class="inline-flex px-3 py-1.5 text-sm font-medium text-white bg-red-500 hover:bg-red-600 rounded-lg transition-colors"
-                                                    onclick="return confirm('Are you sure you want to delete this expense?')">
+                                                    onclick="return confirm('¿Está seguro de que desea eliminar este gasto?')">
                                                     Eliminar
                                                 </button>
                                             </form>

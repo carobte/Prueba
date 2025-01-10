@@ -8,9 +8,6 @@
 </head>
 <body>
     <div class="min-h-screen bg-gray-100">
-        <nav>
-
-        </nav>
 
         <main>
             @yield('content')
