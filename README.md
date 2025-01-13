@@ -43,7 +43,7 @@ This is a web application developed with **Laravel** that allows users to record
 
 To compile CSS and JavaScript files, run:
 
-- <code>npm run dev</code>
+- <code>npm run build</code>
 
 ### 4. Install PHP dependencies
 
